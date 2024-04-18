@@ -1,6 +1,8 @@
 package com.github.vinicius.checkpoint2.modelo;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -23,13 +25,15 @@ public class Consulta extends AbstractEntity<Long> {
     @Column(name = "data_consulta", nullable = false)
     private LocalDateTime data;
 
+    @Enumerated(EnumType.STRING)
+    @JdbcTypeCode(SqlTypes.CHAR)
     @Column(name = "status_consulta", nullable = false)
     private StatusConsulta status;
 
-    @Column(name = "quantidade_horas", nullable = true)
+    @Column(name = "quantidade_horas")
     private long quantidadeHora;
 
-    @Column(name = "valor_consulta", nullable = true)
+    @Column(name = "valor_consulta")
     private double valorConsulta;
 
     @Override

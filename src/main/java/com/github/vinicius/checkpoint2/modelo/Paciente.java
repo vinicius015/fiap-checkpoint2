@@ -20,16 +20,13 @@ public class Paciente extends AbstractEntity<BigDecimal> {
     @Column(nullable = false)
     private String nome;
 
-    @Column(nullable = true)
     private String endereco;
 
-    @Column(nullable = true)
     private String bairro;
 
-    @Column(nullable = true)
     private String email;
 
-    @Column(name = "telefone_completo", nullable = true)
+    @Column(name = "telefone_completo")
     private String telefone;
 
     @Column(name = "data_nascimento", nullable = false)

@@ -14,7 +14,7 @@ Aplicação Java proposta como Checkpoint 2 do primeiro semestre da matéria de 
 #### Clone
 
 ```
-git clone https://github.com/vinicius015/fiap-checkpoint1.git
+git clone https://github.com/vinicius015/fiap-checkpoint2.git
 ```
 
 ## Execução
